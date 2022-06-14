@@ -1,0 +1,23 @@
+CREATE TRIGGER "unusual_event_a_update"
+	AFTER UPDATE
+	ON unusual_event_a
+	FOR EACH ROW
+	EXECUTE PROCEDURE UNUSUAL_EVENT_A_NOTIFY();
+	
+CREATE TRIGGER "unusual_event_b_update"
+	AFTER UPDATE
+	ON unusual_event_b
+	FOR EACH ROW
+	EXECUTE PROCEDURE UNUSUAL_EVENT_B_NOTIFY();
+	
+CREATE TRIGGER "unusual_event_a_insert"
+	AFTER INSERT
+	ON unusual_event_a
+	FOR EACH ROW
+	EXECUTE PROCEDURE UNUSUAL_EVENT_A_NOTIFY();
+	
+CREATE TRIGGER "unusual_event_b_insert"
+	AFTER INSERT
+	ON unusual_event_b
+	FOR EACH ROW
+	EXECUTE PROCEDURE UNUSUAL_EVENT_B_NOTIFY();
