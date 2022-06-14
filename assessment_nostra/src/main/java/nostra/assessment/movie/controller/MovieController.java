@@ -82,11 +82,6 @@ public class MovieController {
 			@RequestParam(required=false) String genre,
 			@RequestParam(defaultValue = "0", required=false) int year
 			) {
-		
-		System.out.println(movieName);
-		System.out.println(rating);
-		System.out.println(genre);
-		System.out.println(year);
 		return new ResponseEntity<ResponseApi>(movieService.getMovieByCategory(movieName, rating, genre, year), HttpStatus.OK);
 	}
 	
@@ -125,6 +120,7 @@ public class MovieController {
 	public ResponseEntity<ResponseApi> deleteMovie(@PathVariable Long id) {
 		return new ResponseEntity<ResponseApi>(movieService.deleteMovie(id), HttpStatus.OK);
 	}
+	
 	
 
 }

@@ -12,16 +12,26 @@
 	<artifactId>movie</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>movie</name>
-	<description>Assesment Nostra project</description>
+	<description>Demo project for Brick Assessment</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
-	<dependencies>
 	
-		<!-- WEB -->
+	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
 		</dependency>
 		
 		<!-- SQL -->
@@ -41,19 +51,7 @@
 			<artifactId>springdoc-openapi-ui</artifactId>
   			<version>1.6.7</version>
    		</dependency>
-		
-		<!-- DEVTOOLS -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
-		</dependency>
+
 		<!-- TESTING -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
