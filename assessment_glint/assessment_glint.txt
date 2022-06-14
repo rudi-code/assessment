@@ -1,0 +1,39 @@
+Spring Boot application that has REST API to purchase items. The request and response body should be in JSON format. 
+
+
+Accept the information below as request: 
+
+UserId 
+
+list of items bought: itemId and amount 
+
+
+payment method chosen by user: gopay, ovo, etc 
+
+More detailed user information and items information can be accessed directly from the database within the application. 
+
+
+The application calculates the price of items bought by the user then makes API to payment gateway. 
+
+
+Assume the gopay has API as below to pay and immediately response if successful. 
+POST https://www.gopay.com/user/${user_telephone_number}/pay 
+{  "amount": 250000  }  
+  
+Tasks 
+Define the REST API request and response 
+Create a Java project using your preferred editor 
+
+No need to build the code to connect to the database. 
+
+No need to build a complete running project. Just a prototype with empty methods is fine, but it should show: 
+
+
+The design of the package structures and the classes.  
+
+The use of any Spring MVC aspects and design patterns that you think are appropriate. 
+
+
+You are allowed to google for references or read notes/books, as no one is expected to know/remember everything. But you need to put your browser in the screen share while you’re doing so. 
+
+What scenarios should be tested, and how to test the code. 
